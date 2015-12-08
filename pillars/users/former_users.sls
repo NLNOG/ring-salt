@@ -75,3 +75,7 @@ users:
         absent: True
         purge: True
         force: True
+    nagios:
+        absent: True
+        purge: True
+        force: True
