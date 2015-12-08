@@ -6,3 +6,4 @@ base:
         - users.former_users
     '* and not *.infra.ring.nlnog.net':
         - users.ring_users
+        - mine
