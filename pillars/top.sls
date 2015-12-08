@@ -6,7 +6,6 @@ base:
         - software.remove_packages
         - users.admins
         - users.former_users
-        - munin_node
 
     # all regular ring nodes
     'not *.infra.ring.nlnog.net':
