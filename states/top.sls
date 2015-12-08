@@ -2,4 +2,4 @@ base:
     '*':
         - core_software
         - users
-        - openssh
+        - openssh.known_hosts
