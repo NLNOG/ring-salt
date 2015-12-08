@@ -1,5 +1,5 @@
-job:
-    user.present:
+users:
+    job:
         - fullname: Job Snijders
         - uid: 6001
         - groups:
