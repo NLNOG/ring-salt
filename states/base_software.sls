@@ -1,4 +1,4 @@
-{% for package in pillar.get('base_software:packages', {}).items() %}
+{% for package in pillar.get('core_packages', {}).items() %}
 {{package}}:
     pkg:
         - installed

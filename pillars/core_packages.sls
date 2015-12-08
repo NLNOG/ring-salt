@@ -1,4 +1,4 @@
-packages:
+core_packages:
     - apache2-utils
     - bash-completion
     - bc
