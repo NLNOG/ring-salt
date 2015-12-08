@@ -1,4 +1,4 @@
-former_users:
+users:
 #    - backbone
 #    - bci
 #    - blacklotus
