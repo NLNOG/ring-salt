@@ -342,10 +342,6 @@ ruby1.9.1-dev:
     pkg:
         - installed
 
-libsqlite3-dev:
-    pkg:
-        - installed
-
 apache2-utils:
     pkg:
         - installed
@@ -353,4 +349,3 @@ apache2-utils:
 jq:
     pkg:
         - installed
-
