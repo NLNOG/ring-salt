@@ -5,7 +5,8 @@ salt-minion:
             - file: /etc/salt/minion
 
 /etc/salt/minion:
-    file.source: salt://salt/minion.conf
+    file.managed:
+        - source: salt://salt/minion.conf
 
 {% if salt['grains.get']('fqdn') == 'master01.infra.ring.nlnog.net' %}
 salt-master:
@@ -15,5 +16,6 @@ salt-master:
             - file: /etc/salt/master
 
 /etc/salt/master:
-    file.source: salt://salt/master.conf
+    file.managed:
+        - source: salt://salt/master.conf
 {% endif %}
