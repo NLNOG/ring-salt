@@ -67,7 +67,7 @@ users:
         absent: True
         purge: True
         force: True
-    xlshosting::
+    xlshosting:
         absent: True
         purge: True
         force: True
