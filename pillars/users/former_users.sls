@@ -20,7 +20,7 @@ former_users:
     - yacast
 
 users:
-{% for former_user in pillar.items('former_users') %}
+{% for former_user in pillar.item('former_users') %}
     {{former_user}}:
         absent: True
         purge: True
