@@ -4,4 +4,4 @@ include:
 base:
     '*':
         - core_software
-        - former_users
+        - users

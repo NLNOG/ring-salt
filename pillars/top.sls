@@ -1,4 +1,4 @@
 base:
     '*':
         - core_packages
-        - former_users
+        - users.former_users
