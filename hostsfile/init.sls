@@ -16,6 +16,8 @@
 {%- set addrs6 = salt['mine.get']('*', minealias6) %}
 
 {%- for name, addrlist in addrs.items() %}
+# hack for amazon, who have RFC1918 IPv4 space on the nodes
+{%- if name.startswith('amazon') addrlist = grains['fqdn_ip4']|first %}
 {{ name }}-host-entry:
   host.present:
 {% if addrlist is string %}
