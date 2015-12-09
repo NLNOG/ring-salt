@@ -19,7 +19,7 @@
 
 # hack for amazon, who have RFC1918 IPv4 space on the nodes
 {%- if name.startswith('amazon') %}
-{%- set addrlist = salt['mine.get'](name, 'fqdn_ip4').items()|first %}
+{%- set addrlist = salt['mine.get'](name, 'fqdn_ip4').values()|first|first %}
 {%- endif %}
 
 {{ name }}-host-entry:
