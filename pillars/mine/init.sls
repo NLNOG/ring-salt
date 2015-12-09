@@ -4,6 +4,6 @@
 mine_functions:
   network.ip_addrs: []
   network.ip_addrs6: []
-  grain.get:
-    - fqdn_ip4
-    - fqdn_ip6
+  fqdn_ip4:
+    - mine_function: grains.get
+      - fqdn_ip4
