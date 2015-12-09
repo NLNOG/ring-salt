@@ -15,7 +15,7 @@
 {%- set minealias6 = salt['pillar.get']('hostsfile:alias6', 'network.ip_addrs6') %}
 {%- set addrs6 = salt['mine.get']('*', minealias6) %}
 
-{%- for name, addrlist in addrs.items() + addrs6.items() %}
+{%- for name, addrlist in [addrs.items(), addrs6.items()] %}
 {{ name }}-host-entry:
   host.present:
 {% if addrlist is string %}
