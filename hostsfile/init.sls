@@ -19,7 +19,7 @@
 
 # hack for amazon, who have RFC1918 IPv4 space on the nodes
 {%- if name.startswith('amazon') %}
-{%- addrlist = grains['fqdn_ip4']|first %}
+{%- set addrlist = grains['fqdn_ip4']|first %}
 {%- endif %}
 
 {{ name }}-host-entry:
