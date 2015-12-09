@@ -5,6 +5,6 @@ base:
         - users
         - openssh.known_hosts
 
-    'coloclue01.ring.nlnog.net':
-        - hostsfile
-        - hostsfile.hostname
+#    'coloclue01.ring.nlnog.net':
+#        - hostsfile
+#        - hostsfile.hostname
