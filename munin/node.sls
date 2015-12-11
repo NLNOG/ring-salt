@@ -1,5 +1,5 @@
 munin_node_pkgs:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - munin-node
       - munin-common
