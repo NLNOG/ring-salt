@@ -1,6 +1,5 @@
 munin_master_pkgs:
-  pkg.latest:
-    - munin
+  pkg.latest: munin
 
 munin_node_config:
   file.managed:
@@ -8,4 +7,4 @@ munin_node_config:
     - source: salt://munin/munin-master.conf
     - template: jinja
   require:
-    - munin_master_pkgs
+    - pkg: munin_master_pkgs
