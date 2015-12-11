@@ -20,3 +20,4 @@ absent_users:
   - yacast
   - nagios
   - bigwells
+  - centarra
