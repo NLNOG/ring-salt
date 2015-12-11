@@ -4,9 +4,9 @@ base:
     - core_software
     - users
     - openssh.known_hosts
-
-  'coloclue01.ring.nlnog.net':
     - munin.node
+
+#  'coloclue01.ring.nlnog.net':
 #   - hostsfile
 #   - hostsfile.hostname
 
