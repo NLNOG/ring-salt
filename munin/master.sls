@@ -3,7 +3,7 @@ munin_master_pkgs:
     - pkgs:
       - munin
 
-munin_node_config:
+munin_master_config:
   file.managed:
     - name: /etc/munin/munin.conf
     - source: salt://munin/munin-master.conf
