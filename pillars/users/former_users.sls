@@ -1,4 +1,4 @@
-former_users:
+absent_users:
   - backbone
   - bci
   - blacklotus
@@ -20,11 +20,3 @@ former_users:
   - yacast
   - nagios
   - bigwells
-
-users:
-{%- for former_user in salt['pillar.get']('former_users') -%}
-  {{ former_user }}:
-    - absent: True
-    - purge: True
-    - force: True
-{% endfor %}
