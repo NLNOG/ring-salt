@@ -19,7 +19,7 @@ munin_service:
 munin_node_config:
   file.managed:
     - name: /etc/munin/munin-node.conf
-    - source: salt://munin/munin-node.conf
+    - source: salt://munin/files/munin-node.conf
 
 munin_node:
   grains.present:
