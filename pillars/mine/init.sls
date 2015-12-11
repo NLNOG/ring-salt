@@ -8,3 +8,6 @@ mine_functions:
   fqdn_ip4:
     - mine_function: grains.get
     - fqdn_ip4
+  fqdn:
+    - mine_function: grains.get
+    - fqdn

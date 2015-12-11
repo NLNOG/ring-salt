@@ -21,6 +21,10 @@ munin_node_config:
     - name: /etc/munin/munin-node.conf
     - source: salt://munin/munin-node.conf
 
-munin_node_installed:
+munin_node:
   grains.present:
     - value: installed
+  require:
+    - pkg: munin_node_pkgs
+    - service: munin_service
+    - file: munin_node_config
