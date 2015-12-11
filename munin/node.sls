@@ -22,5 +22,5 @@ munin_node_config:
     - source: salt://munin/munin-node.conf
 
 grains.present:
-  name: munin_node
-  value: installed
+  - name: munin_node
+  - value: installed
