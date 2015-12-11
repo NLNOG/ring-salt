@@ -14,6 +14,7 @@ munin_service:
       - file: /etc/munin/munin-node.conf
     - require:
       - pkg: munin_node_pkgs
+      - file: munin_node_config
 
 munin_node_config:
   file.managed:
