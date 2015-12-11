@@ -22,7 +22,7 @@ former_users:
   bigwells
 
 users:
-{%- for former_user in salt['pillar.get']('users:former_users') -%}
+{%- for former_user in salt['pillar.get']('former_users') -%}
   {{ former_user }}:
     - absent: True
     - purge: True
