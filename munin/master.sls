@@ -1,5 +1,7 @@
 munin_master_pkgs:
-  pkg.latest: munin
+  pkg.latest:
+    - pkgs:
+      - munin
 
 munin_node_config:
   file.managed:
