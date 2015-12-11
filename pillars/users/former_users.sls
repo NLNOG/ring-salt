@@ -21,3 +21,4 @@ absent_users:
   - nagios
   - bigwells
   - centarra
+  - inerail
