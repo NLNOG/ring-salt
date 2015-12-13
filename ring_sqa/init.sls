@@ -10,7 +10,7 @@ SyslogLogger:
   file.directory:
     - user: root
     - mode: 755
-    require:
+    - require:
       - gem: ring-sqa
 
 /etc/ring-sqa/main.conf:
