@@ -23,13 +23,13 @@ ring_sqa_pkgs:
 
 /etc/init/ring-sqa4.conf:
   file.managed:
-    - source: salt://ring_sqa/files/ring-sqa4.conf
+    - source: salt://ring_sqa/files/upstart-ring-sqa4.conf
     - require:
       - file: /etc/ring-sqa
 
 /etc/init/ring-sqa6.conf:
   file.managed:
-    - source: salt://ring_sqa/files/ring-sqa6.conf
+    - source: salt://ring_sqa/files/upstart-ring-sqa6.conf
     - require:
       - file: /etc/ring-sqa
 
