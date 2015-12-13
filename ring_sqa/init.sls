@@ -1,6 +1,6 @@
 ring_sqa_pkgs:
   gem.install:
-    pkgs:
+    - pkgs:
       - ring-sqa
       - SyslogLogger
 
