@@ -46,7 +46,7 @@ ring_sqa4_service:
     - require:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/init/ring-sqa4.conf
-      - gem: ring_sqa_pkgs
+      - ring_sqa_pkgs: []
 
 ring_sqa6_service:
   service.running:
@@ -59,4 +59,4 @@ ring_sqa6_service:
     - require:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/init/ring-sqa6.conf
-      - gem: ring_sqa_pkgs
+      - ring_sqa_pkgs: []
