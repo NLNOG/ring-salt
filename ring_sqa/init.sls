@@ -1,8 +1,8 @@
 ring_sqa_pkgs:
-  gem.install:
-    - pkgs:
-      - ring-sqa
-      - SyslogLogger
+  gem.installed:
+    - ring-sqa
+    - SyslogLogger
+    - ruby: "1.9.3"
 
 /etc/ring-sqa:
   file.directory:
