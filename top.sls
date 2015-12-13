@@ -6,6 +6,9 @@ base:
     - openssh.known_hosts
     - munin.node
 
+  '*.ring.nlnog.net and not *.infra.ring.nlnog.net':
+    - ring_sqa
+
 #  'coloclue01.ring.nlnog.net':
 #   - hostsfile
 #   - hostsfile.hostname
