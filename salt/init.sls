@@ -35,7 +35,7 @@ salt-master:
 
 salt_master_configfile:
   file.managed:
-    - name: /etc/salt/master:
+    - name: /etc/salt/master
     - source: salt://salt/master.conf
     - require:
       - pkg: salt_master_pkgs
