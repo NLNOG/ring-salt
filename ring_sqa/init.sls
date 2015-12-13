@@ -39,7 +39,7 @@ ring_sqa4_service:
     - watch:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/ring-sqa/hosts.conf
-    - enabled
+    - enable: True
     - provider: upstart
     - require:
       - file: /etc/ring-sqa/main.conf
@@ -52,7 +52,7 @@ ring_sqa6_service:
     - watch:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/ring-sqa/hosts.conf
-    - enabled
+    - enable: True
     - provider: upstart
     - require:
       - file: /etc/ring-sqa/main.conf
