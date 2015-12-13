@@ -1,15 +1,17 @@
-ring_sqa_pkgs:
-  - ring-sqa:
-    gem.installed:
-      - ruby: "1.9.3"
-  - SyslogLogger:
-    gem.installed:
-      - ruby: "1.9.3"
+ring-sqa:
+  gem.installed:
+    - ruby: "1.9.3"
+
+SyslogLogger:
+  gem.installed:
+    - ruby: "1.9.3"
 
 /etc/ring-sqa:
   file.directory:
     - user: root
     - mode: 755
+    require:
+      - gem: ring-sqa
 
 /etc/ring-sqa/main.conf:
   file.managed:
@@ -46,7 +48,7 @@ ring_sqa4_service:
     - require:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/init/ring-sqa4.conf
-      - ring_sqa_pkgs: []
+      - gem: ring-sqa
 
 ring_sqa6_service:
   service.running:
@@ -59,4 +61,4 @@ ring_sqa6_service:
     - require:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/init/ring-sqa6.conf
-      - ring_sqa_pkgs: []
+      - gem: ring-sqa
