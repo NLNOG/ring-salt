@@ -34,8 +34,8 @@ ring_sqa_pkgs:
       - file: /etc/ring-sqa
 
 ring_sqa4_service:
-  service:
-    - running
+  service.running:
+    - name: ring-sqa4
     - watch:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/ring-sqa/hosts.conf
@@ -47,8 +47,8 @@ ring_sqa4_service:
       - gem: ring_sqa_pkgs
 
 ring_sqa6_service:
-  service:
-    - running
+  service.running:
+    - name: ring-sqa6
     - watch:
       - file: /etc/ring-sqa/main.conf
       - file: /etc/ring-sqa/hosts.conf
