@@ -1,10 +1,10 @@
 ring-sqa:
   gem.installed:
-    - ruby: "1.9.3"
+    - ruby: "1.9.1"
 
 SyslogLogger:
   gem.installed:
-    - ruby: "1.9.3"
+    - ruby: "1.9.1"
 
 /etc/ring-sqa:
   file.directory:
