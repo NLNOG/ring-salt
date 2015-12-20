@@ -5,6 +5,7 @@ base:
     - users
     - openssh.known_hosts
     - munin.node
+    - cron
 
   '*.ring.nlnog.net and not *.infra.ring.nlnog.net':
     - ring_sqa
