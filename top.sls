@@ -16,3 +16,6 @@ base:
 
   'munin.infra.ring.nlnog.net':
     - munin.master
+
+  'master01.infra.ring.nlnog.net':
+    - cron.master
