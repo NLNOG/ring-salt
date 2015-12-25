@@ -20,7 +20,7 @@ munin_master_apache_config:
 
 munin_master_apache_symlink:
   file.symlink:
-    - nane: /etc/apache2/conf.d/munin.conf
+    - name: /etc/apache2/conf.d/munin.conf
     - target: /etc/munin/apache.conf
   require:
     - pkg: munin_master_pkgs
