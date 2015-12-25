@@ -1,6 +1,6 @@
 node_initiated_highstate:
   cron.present:
-    - name: salt-call state.highstate
+    - name: chronic salt-call state.highstate
     - identifier: node_initiated_highstate
     - user: root
     - minute: random
