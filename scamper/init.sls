@@ -12,6 +12,10 @@ scamper_pkgs:
       - libscamperfile0
       - scamper
 
+/home/scamper/traces:
+  file.directory:
+    - user: scamper
+
 /etc/init/scamper.conf:
   file.managed:
     - source: salt://scamper/files/upstart-scamper.conf
