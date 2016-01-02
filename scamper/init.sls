@@ -45,7 +45,7 @@ scamper_run:
 
 scamper_clean:
   cron.present:
-    - name: "find /home/scamper/collected/* -mtime +8 -exec rm {} \;"
+    - name: find /home/scamper/collected/* -mtime +8 -exec rm {} \;
     - identifier: scamper_clean
     - user: root
     - minute: random
