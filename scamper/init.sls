@@ -1,5 +1,6 @@
 scamper_user:
   user.present:
+    - name: scamper
     - fullname: Scamper collector
     - home: /home/scamper
     - uid: 2001
