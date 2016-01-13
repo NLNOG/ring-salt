@@ -8,3 +8,4 @@ remove_packages:
     - ufw
     - apparmor
     - apparmor-utils
+    - molly-guard
