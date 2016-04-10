@@ -87,3 +87,5 @@ core_packages:
     - w3m
     - wget
     - whois
+    - swaks
+
