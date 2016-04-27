@@ -88,4 +88,5 @@ core_packages:
     - wget
     - whois
     - swaks
+    - ruby-json
 
