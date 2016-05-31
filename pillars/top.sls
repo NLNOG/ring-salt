@@ -3,7 +3,6 @@ base:
   '*':
     - mine
     - openssh
-    - software.remove_packages
     - users.admins
     - users.former_users
 
