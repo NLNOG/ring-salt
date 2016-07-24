@@ -14,45 +14,17 @@ scamper_user:
     - enc: ssh-rsa
     - comment: scamper_collector@storage01.infra.ring.nlnog.net
 
-scamper_pkgs:
-  pkg.latest:
-    - pkgs:
       - libscamperfile0
       - scamper
 
-/home/scamper/traces:
-  file.directory:
-    - user: scamper
-
-/etc/init/scamper.conf:
-  file.managed:
-    - source: salt://scamper/files/upstart-scamper.conf
-    - user: root
-    - group: root
-    - mode: 0644
-
-/home/scamper/run-traces.sh:
-  file.managed:
-    - source: salt://scamper/files/run-traces.sh
-    - user: scamper
-    - group: scamper
-    - mode: 0755
-
-scamper_service:
-  service.running:
-    - name: scamper
-    - enable: True
-    - watch:
-      - pkg: scamper_pkgs
-
 scamper_run:
-  cron.present:
+  cron.absent:
     - name: /home/scamper/run-traces.sh
     - user: scamper
     - minute: random
 
 scamper_clean:
-  cron.present:
+  cron.absent:
     - name: find /home/scamper/traces/* -mtime +8 -exec rm {} \;
     - identifier: scamper_clean
     - user: root
