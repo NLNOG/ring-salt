@@ -7,12 +7,7 @@ base:
     - cron
 
   '*.ring.nlnog.net and not *.infra.ring.nlnog.net':
-    - ring_sqa
     - scamper
-
-#  'coloclue01.ring.nlnog.net':
-#   - hostsfile
-#   - hostsfile.hostname
 
   'compute01.infra.ring.nlnog.net':
     - munin.master
