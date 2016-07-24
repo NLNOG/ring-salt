@@ -14,9 +14,6 @@ scamper_user:
     - enc: ssh-rsa
     - comment: scamper_collector@storage01.infra.ring.nlnog.net
 
-      - libscamperfile0
-      - scamper
-
 scamper_run:
   cron.absent:
     - name: /home/scamper/run-traces.sh
