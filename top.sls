@@ -6,9 +6,6 @@ base:
     - munin.node
     - cron
 
-  '*.ring.nlnog.net and not *.infra.ring.nlnog.net':
-    - scamper
-
   'compute01.infra.ring.nlnog.net':
     - munin.master
 
